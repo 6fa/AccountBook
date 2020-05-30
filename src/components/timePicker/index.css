@@ -1,0 +1,71 @@
+
+.timePicker {
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  background-color:  rgb(90, 90, 90);
+  bottom: 0;
+}
+
+.timePicker-ctrl {
+  width: 100%;
+  height: .8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: .2rem;
+  background-color: rgb(90, 90, 90);
+  color: orange;
+}
+.timePicker-ctrl .cancel {
+  padding-left: .2rem;
+}
+.timePicker-ctrl .done {
+  padding-right: .2rem;
+}
+
+
+
+.timePicker-content {
+  color: lightgrey;
+  width: 100%;
+  /* height: 4.2rem; */
+  height: 3.6rem;
+  border: 2px solid transparent;
+  top: .6rem;
+  position: relative;
+}
+.timePicker-scroll {
+  width: 100%;
+  height: .6rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -1.8rem;
+}
+.timePicker-col {
+  overflow-y: scroll;
+  height: 4.2rem;
+  width: 25%;
+  text-align: center;
+  line-height: .6rem;
+}
+.timePicker-col::-webkit-scrollbar {
+  display: none
+}
+
+.timePicker-col li {
+  height: .6rem;
+}
+
+.timePicker-wheel {
+  position: absolute;
+  top: 1.2rem;
+  width: 100%;
+  height: .6rem;
+  background-color: rgba(248, 248, 248, 0.3);
+  box-shadow: 0 0 1.8rem .2rem grey;
+}

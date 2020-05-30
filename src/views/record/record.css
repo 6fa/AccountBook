@@ -1,0 +1,187 @@
+#record-page {
+  width: 100%;
+  height: 100%;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 切换支出收入 */
+.re-account-type {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(255, 218, 070);
+  font-size: .35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(94, 83, 83);
+}
+.re-account-type-exp,
+.re-account-type-in {
+  padding: .2rem .4rem;
+  border-radius: .2rem;
+}
+.re-account-type-exp.active,
+.re-account-type-in.active {
+  background-color: rgb(255, 230, 131);
+}
+/* 增加类型 */
+.re-time {
+  height: 5%;
+  margin: 3% 0;
+  padding: 0 .2rem;
+  background-color: rgb(255, 245, 205);
+  border-radius: .2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.re-time-icon {
+  color: orange;
+  font-size: .5rem;
+}
+.re-time-text {
+  padding-left: .1rem;
+  color: rgb(114, 114, 114);
+}
+
+
+/* 详细类型 */
+.re-account-exptype,
+.re-account-intype{
+  max-height: 79%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: scroll;
+}
+.re-account-exptype::-webkit-scrollbar,
+.re-account-intype::-webkit-scrollbar {
+  display: none;
+}
+.re-account-exptype.hidden,
+.re-account-intype.hidden {
+  display: none;
+}
+.re-account-item,
+.re-setting {
+  width: 25%;
+  height: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.re-account-icon {
+  width: .8rem;
+  height: .8rem;
+  background-color: rgb(255, 248, 234);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.re-account-icon i {
+  font-size: .5rem;
+  color: orange;
+}
+
+.re-account-item.active .re-account-icon {
+  background-color: orange;
+}
+.re-account-item.active i {
+  color: #ffffff;
+}
+
+/* 记账框 */
+.re-add-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+  transition: all .5s;
+}
+.re-add-mask.hidden {
+  transform: translate(0, -100%);
+}
+.re-add {
+  position: absolute;
+  top: 4rem;
+  left: 5%;
+  width: 90%;
+  background-color: rgb(255, 254, 251);
+  border-radius: .2rem;
+  z-index: 9;
+  color: orange;
+}
+
+.re-add-ctrl {
+  width: 100%;
+  height: .7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.re-add-cancel,
+.re-add-done {
+  text-align: center;
+  width: 49%;
+  color: grey;
+}
+
+
+.re-add-money {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  align-items: flex-start;
+  margin-top: .5rem;
+}
+.re-add-money-text,
+.re-add-note-text {
+  width: 20%;
+  text-align: center;
+}
+.re-add-money-input {
+  width: 30%;
+  height: .5rem;
+  border: 0.01rem solid lightgrey;
+  padding: 0 .1rem;
+  font-size: .3rem;
+  font-family: '微软雅黑';
+}
+.re-add-money-input.warning {
+  border: 1px solid red;
+}
+
+.re-add-note {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: .5rem;
+}
+.re-add-note-input {
+  width: 60%;
+  height: 1rem;
+  border: 0.01rem solid lightgrey;
+  padding: .1rem;
+  font-size: .3rem;
+  font-family: '微软雅黑'
+}
+
+/* 时间选择器 */
+.timepicker-container {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  background-color: rgba(0,0,0,.3);
+}
+.timepicker-container.hidden {
+  transform: translate(0, 100%);
+}

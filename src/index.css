@@ -1,0 +1,56 @@
+
+ul,li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+input {
+  border: none;
+  outline:medium;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+html {
+  font-size: 13.333333vw;
+  max-width: 560px;
+  overflow-x: hidden;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+html,body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 0.32rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.page {
+  width: 100%;
+  height: 90%;
+}
+#footer-bar {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(253, 251, 251);
+}
+
+@media (min-width: 560px) {
+  html {
+    font-size: 54px;
+  }
+}

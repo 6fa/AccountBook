@@ -1,0 +1,192 @@
+#bill {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bill-time {
+  height: 1.3rem;
+  background-color: rgb(255, 218, 070);
+  font-size: .4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(94, 83, 83);
+  position: fixed;
+}
+.bill-time .iconfont {
+  padding-left: .2rem;
+  font-size: .5rem;
+  font-weight: bold;
+}
+/* 年总数 */
+.bill-total {
+  background-color: rgb(255, 253, 244);
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: .35rem;
+  color: rgb(94, 83, 83);
+  width: 100%;
+  padding: 0 .4rem;
+  box-sizing: border-box;
+}
+.bill-total-text {
+  color: orange;
+  font-size: .3rem;
+}
+.bill-total-in,
+.bill-total-exp,
+.bill-total-surplus {
+  padding-top: .1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bill-total-surplus {
+  border-top: .01rem dashed orange;
+  padding-bottom: .1rem;
+}
+
+/* 表头 */
+.bill-head {
+  height: .8rem;
+  width: 100%;
+  padding: 0 .2rem;
+  border-bottom: 0.01rem solid lightgrey;
+  display: flex;
+  align-items: center;
+  color: grey;
+  margin-top: .2rem;
+  font-size: .3rem;
+  box-sizing: border-box;
+}
+.bill-head-time {
+  width: 10%;
+  text-align: center;
+}
+.bill-head-in,
+.bill-head-exp,
+.bill-head-surplus {
+  width: 27%;
+  text-align: center;
+}
+
+/* 内容 */
+.bill-body {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: rgb(90, 90, 90);
+}
+.bill-body-item {
+  width: 100%;
+  display: flex;
+  height: .8rem;
+  align-items: center;
+  padding: 0 .2rem;
+  font-size: .3rem;
+  border-bottom: 1px dashed lightgrey;
+  box-sizing: border-box;
+}
+.bill-body-time {
+  width: 10%;
+  text-align: center;
+}
+.bill-body-in,
+.bill-body-exp,
+.bill-body-surplus {
+  width: 27%;
+  text-align: center;
+}
+.bill-body-todetail {
+  width: 9%;
+}
+
+
+/* 排行 */
+.bill-rank {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 8;
+  background-color: #ffffff;
+  color: grey;
+  transition: all .5s;
+}
+.bill-rank.hidden {
+  transform: translate(100%,0);
+}
+.bill-rank-head {
+  height: .8rem;
+  background-color: rgb(255, 218, 070);
+  display: flex;
+  align-items: center;
+}
+.bill-rank-back i {
+  font-size: .5rem;
+  padding-left: .2rem;
+}
+
+.bill-rank-exp,
+.bill-rank-in {
+  width: 100%;
+  padding: .2rem;
+  box-sizing: border-box;
+  margin-top: .2rem;
+}
+.bill-rank-text {
+  color: orange;
+  font-size: .35rem;
+}
+.bill-rank-list {
+  padding-left: .3rem;
+  padding-top: .3rem;
+}
+.bill-rank-in-item {
+  height: .8rem;
+  line-height: .8rem;
+  padding-top: .1rem;
+  border-bottom: 1px dashed lightgrey;
+  position: relative;
+  display: flex;
+}
+
+.bill-rank-icon {
+  width: .6rem;
+  height: .6rem;
+  background-color:rgb(255, 251, 232);
+  border-radius: 50%;
+  line-height: .8rem;
+  margin-right: .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bill-rank-icon i {
+  color: orange;
+  font-size: .4rem;
+}
+.bill-rank-percent {
+  position: absolute;
+  right: .2rem;
+}
+
+/* 时间选择器 */
+.bill-time-container {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  background-color: rgba(0,0,0,.3);
+}
+.bill-time-container.hidden {
+  transform: translate(0, 100%);
+}

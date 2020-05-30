@@ -1,0 +1,165 @@
+#setting {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+.set-title {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(255, 218, 070);
+  font-size: .37rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(94, 83, 83);
+  position: relative;
+}
+.set-back {
+  position: absolute;
+  left: .3rem;
+}
+.set-back i {
+  font-size: .6rem;
+  font-weight: bold;
+}
+
+
+/* 增加类别 */
+.set-add {
+  position: absolute;
+  bottom: 0;
+  z-index: 8;
+  height: 1rem;
+  width: 100%;
+  background-color: rgb(255, 251, 221);
+  line-height: 1rem;
+  text-align: center;
+  color: orange;
+  font-size: .35rem;
+}
+
+/* 删除类型 */
+.set-del {
+  height: 90%;
+  width: 100%;
+  overflow: scroll;
+  padding: .5rem .5rem 2rem;
+  box-sizing: border-box;
+}
+.set-del-item {
+  display: flex;
+  align-items: center;
+  height: .7rem;
+  width: 100%;
+  padding-bottom: .15rem;
+  margin-top: .35rem;
+  border-bottom: 0.01rem solid lightgrey;
+  position: relative;
+}
+
+.set-del-item-icon {
+  width: .7rem;
+  height: .7rem;
+  background-color: rgb(255, 251, 221);
+  border-radius: 50%;
+  line-height: .7rem;
+  text-align: center;
+}
+.set-del-item-icon i {
+  font-size: .5rem;
+  color: orange;
+}
+.set-del-item-text {
+  padding-left: .3rem;
+  font-size: .37rem;
+  color: grey;
+}
+.set-del-item-ctrl {
+  position: absolute;
+  right: 0;
+  color: red;
+}
+
+/* 添加类别弹窗 */
+.set-addbox-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-color: rgba(0,0,0,.3);
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+.set-addbox-mask.hidden {
+  transform: translate(0,105%);
+}
+.set-addbox {
+  background-color: #fff;
+  width: 80%;
+  padding: .3rem;
+  border-radius: .3rem;
+}
+.set-addbox-main {
+  width: 100%;
+}
+.set-addbox-iconlist {
+  width: 100%;
+  color: orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+.set-addbox-icon {
+  width: .6rem;
+  height: .6rem;
+  background-color: rgb(255, 251, 221);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .5rem;
+  margin-top: .2rem;
+}
+.set-addbox-icon i {
+  font-size: .45rem;
+}
+.set-addbox-icon.active {
+  background-color: orange;
+}
+.set-addbox-icon.active i {
+  color: #fff;
+}
+
+.set-addbox-input {
+  width: 100%;
+  border-bottom: 0.01rem orange solid;
+  margin: .6rem 0 .8rem;
+}
+.set-addbox-input input {
+  border: none;
+  height: .5rem;
+  width: 100%;
+  font-size: .3rem;
+}
+.set-addbox-input input.warn {
+  border: 0.01rem solid red;
+}
+
+.set-addbox-ctrl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.set-addbox-cancel, 
+.set-addbox-done {
+  width: 2rem;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center;
+  background-color: rgb(255, 210, 125);
+  border-radius: .5rem;
+}

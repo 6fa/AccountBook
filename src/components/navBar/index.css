@@ -1,0 +1,28 @@
+.nav-bar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.3rem;
+  color: grey;
+}
+
+.nav-bar-item {
+  padding: 0 .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar-item .iconfont {
+  font-size: 0.4rem;
+  padding-bottom: .1rem;
+}
+.nav-bar-item.active .iconfont {
+  transform: scale(1.3);
+  color: orange;
+  transition: all .5s;
+}
+.nav-bar-item.active .nav-bar-text {
+  color: orange;
+}

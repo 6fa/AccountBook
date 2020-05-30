@@ -1,0 +1,43 @@
+<div id="record-page">
+  <div class="re-account-type">
+    <div class="re-account-type-exp active">支出</div>
+    <div class="re-account-type-in">收入</div>
+  </div>
+  <!-- 时间 -->
+  <div class="re-time" data-hasPicker="false">
+    <i class="iconfont re-time-icon">&#xe647;</i>
+    <span class="re-time-text">2020/5/12</span>
+  </div>
+  <!-- 支出类型 -->
+  <div class="re-account-exptype">
+    {{expIconList}}
+  </div>
+
+  <!-- 收入类型 -->
+  <div class="re-account-intype hidden">
+    {{inIconList}}
+  </div>
+
+  <!-- 记账 -->
+  <div class="re-add-mask hidden">
+    <div class="re-add">
+      <div class="re-add-money">
+        <div class="re-add-money-text">金额：</div>
+        <!-- 自己写验证则不要加上type = number,这里写上会不识别第二个点 -->
+        <input class="re-add-money-input" placeholder="仅限数字">
+      </div>
+      <div class="re-add-note">
+        <div class="re-add-note-text">备注：</div>
+        <textarea class="re-add-note-input" placeholder="最多20字" maxlength="20"></textarea>
+      </div>
+      <div class="re-add-ctrl">
+        <div class="re-add-cancel">取消</div>
+        <div>|</div>
+        <div class="re-add-done">完成</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 时间选择器 -->
+  <div class="timepicker-container hidden"></div>
+</div>

@@ -1,0 +1,57 @@
+<div id="setting">
+  <!-- 区分支出/收入 -->
+  <div class="set-title">
+    <span class="set-back">
+      <i class="iconfont icon-zuo"></i>
+    </span>
+    <span class="set-type">{{title}}</span>
+  </div>
+  <!-- 删除类别 -->
+  <div class="set-del">
+    {{delTemplate}}
+  </div>
+  <!-- 添加类别 -->
+  <div class="set-add">+添加类别</div>
+
+  <!-- 添加类别弹窗 -->
+  <div class="set-addbox-mask hidden">
+    <div class="set-addbox">
+      <div class="set-addbox-main">
+        <div class="set-addbox-iconlist">
+          <div class="set-addbox-icon active">
+            <i class="iconfont">&#xe66f;</i>
+          </div>
+          <div class="set-addbox-icon">
+            <i class="iconfont">&#xe600;</i>
+          </div>
+          <div class="set-addbox-icon">
+            <i class="iconfont">&#xe602;</i>
+          </div>
+          <div class="set-addbox-icon">
+            <i class="iconfont">&#xe64d;</i>
+          </div>
+          <div class="set-addbox-icon">
+            <i class="iconfont">&#xe689;</i>
+          </div>
+          <div class="set-addbox-icon">
+            <i class="iconfont">&#xe637;</i>
+          </div>
+          <div class="set-addbox-icon">
+            <i class="iconfont">&#xe707;</i>
+          </div>
+          <div class="set-addbox-icon">
+            <i class="iconfont">&#xea1f;</i>
+          </div>
+        </div>
+        <div class="set-addbox-input">
+          <input placeholder="输入类别名称（不超过四个字）" maxlength="4">
+        </div>
+      </div>
+
+      <div class="set-addbox-ctrl">
+        <div class="set-addbox-cancel">取消</div>
+        <div class="set-addbox-done">完成</div>
+      </div>
+    </div>
+  </div>
+</div>
