@@ -3,16 +3,6 @@ const BaseRouter = {
     this.mode = options.mode ? options.mode : 'hash'
     this.pathList = options.pathList ? options.pathList : []
   },
-  // beforeEach: function (callback) {
-  //   if (typeof callback === 'function') {
-  //     this.beforeFun = callback
-  //   }
-  // },
-  // afterEach: function (callback) {
-  //   if (typeof callback === 'function') {
-  //     this.afterFun = callback
-  //   }
-  // },
   render: function (state) {
     let p = state
     if (state.includes('?')) {
