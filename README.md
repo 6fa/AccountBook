@@ -254,12 +254,12 @@ module.exports = merge(commonConfig, prodConfig)
 ```
 
 ## 路由系统
-  在router文件夹里有：
-    - base.js
-    - hash.js
-    - history.js
-    - router.js
-    - routerList.js
+  在router文件夹里有：<br>
+  - base.js
+  - hash.js
+  - history.js
+  - router.js
+  - routerList.js
   ### base.js
   base.js包含初始化路由(init)、渲染页面(render)两个函数，是hash及history模式都用到的，故提取到base，导出为BaseRouter。<br>
   init函数确定选择的模式及路由列表；render函数接收传入的路径，执行该路径对应的component函数，component函数的作用是动态引入页面，使用了es6的import()方法
