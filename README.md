@@ -53,20 +53,7 @@ ps: 如果有写的不对之处、还可以改进的地方，希望大家能够�
   ```
 
 ## 效果图
- - 首页<br>
-  ![home](/screenshot/home.png)
- - 首页详情<br>
-  ![home-detail](/screenshot/home-detail.png)
- - 记账页<br>
-  ![record](/screenshot/record.png)
- - 设置<br>
-  ![setting](/screenshot/setting.png)
- - 账单<br>
-  ![bill](/screenshot/bill.png)
- - 账单排行<br>
-  ![bill-rank](/screenshot/bill-rank.png)
- - 日期选择器<br>
-  ![bill-rank](/screenshot/timePicker.png)
+[效果图可戳此链接查看](https://6fa.github.io/#accountBook)
 
 
 
@@ -499,4 +486,4 @@ module.exports = merge(commonConfig, prodConfig)
 
   ### 优点/缺陷
   与通过传统的对滚动事件的监听、获取滚动距离来实现无限滚动相比，Intersection Observer方法显得更简洁一些，并且不需要做防抖逻辑。<br>
-  当然这种方式也需要计算、拟定好元素高度与位置，就本项目来说选中体验感不是很好，元素进入选择区没有“咔哒”一声的选中感。
+  当然这种方式也需要计算, 主要是需要拟定好元素的位置

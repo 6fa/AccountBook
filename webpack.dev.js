@@ -8,7 +8,7 @@ const devConfig = {
   devServer: {
     overlay: true,
     contentBase: path.resolve(__dirname, 'dist'),
-    host: '192.168.3.5',
+    host: 'localhost',
     historyApiFallback: true
   },
   module: {

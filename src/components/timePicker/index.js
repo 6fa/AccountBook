@@ -124,7 +124,7 @@ const timePiker = {
         this.monthScrollEl.scrollTop = this.itemHeight * (this.monthList.length / 2 + month) - (4 * this.itemHeight)
       } else {
         this.monthScrollEl.scrollTop = this.itemHeight * month - (4 * this.itemHeight)
-        console.log(this.monthScrollEl.scrollTop)
+        // console.log(this.monthScrollEl.scrollTop)
       }
     }
     // 日
@@ -138,7 +138,7 @@ const timePiker = {
     }
   },
   addEvent: function () {
-    this.listenScroll()
+    // this.listenScroll()
     // 监听进入选择框的元素
     this.startObserver()
     // 点击取消按钮
@@ -146,11 +146,11 @@ const timePiker = {
     // 点击完成按钮
     this.clickDone()
   },
-  listenScroll: function () {
-    this.yearScrollEl.addEventListener('scroll', (e) => {
-      console.log(e.target.scrollTop)
-    })
-  },
+  // listenScroll: function () {
+  //   this.yearScrollEl.addEventListener('scroll', (e) => {
+  //     console.log(e.target.scrollTop)
+  //   })
+  // },
   startObserver: function () {
     // 监测列表的最后/第一个元素
     this.firstAndLastItem = new IntersectionObserver((entries) => {
@@ -222,7 +222,7 @@ const timePiker = {
               this.timeResult[type] = itemDom.innerHTML
               break
             case 'month':
-              console.log('滚轮里面的元素: 月份')
+              // console.log('滚轮里面的元素: 月份')
               this.monthScrollEl.scrollTop = (itemIndex + 1) * this.itemHeight - (4 * this.itemHeight)
               this.timeResult[type] = itemDom.innerHTML
               // 月份改变，让日期改变  页面刚显示时不执行下面这句
@@ -230,7 +230,6 @@ const timePiker = {
               this.loaded = true
               break
             case 'date':
-              console.log('滚轮里面的元素: 日期')
               this.dateScrollEl.scrollTop = (itemIndex + 1) * this.itemHeight - (4 * this.itemHeight)
               this.timeResult[type] = itemDom.innerHTML
               break
@@ -239,7 +238,7 @@ const timePiker = {
       })
     }, {
       root: this.element.querySelector('.timePicker-wheel'),
-      threshold: [0.6]
+      threshold: [0.1]
     })
     this.element.querySelectorAll('li').forEach((item) => {
       this.selectedItem.observe(item)
@@ -271,7 +270,7 @@ const timePiker = {
   },
   yearChange: function (itemDom, scrolltop) {
     this.yearList = this.getYearList(itemDom.innerHTML)
-    console.log('this.yearList', this.yearList)
+    // console.log('this.yearList', this.yearList)
     const yearTemplate = this.setTemplate({ list: this.yearList, type: 'year' })
     this.element.querySelector('.year').innerHTML = yearTemplate
     this.yearScrollEl.scrollTop = scrolltop
