@@ -11,6 +11,12 @@
 
 ps: 如果有写的不对之处、还可以改进的地方，希望大家能够指出，感激不尽~
 
+
+
+
+## 效果图
+[效果图可戳此链接查看](https://6fa.github.io/#accountBook)
+
 ## 目录结构
   - screenshot: 项目效果图片
   - src
@@ -51,9 +57,6 @@ ps: 如果有写的不对之处、还可以改进的地方，希望大家能够�
   # 打包为生产环境
   npm run build
   ```
-
-## 效果图
-[效果图可戳此链接查看](https://6fa.github.io/#accountBook)
 
 
 
